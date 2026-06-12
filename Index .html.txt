@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nimil Jain | Ayurvedic Consultant</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-stone-100">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-leaf text-emerald-600 text-2xl"></i>
+                <span class="text-xl font-bold tracking-tight text-stone-900">Dr. Nimil Jain</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-stone-600">
+                <a href="#about" class="hover:text-emerald-600 transition">About</a>
+                <a href="#services" class="hover:text-emerald-600 transition">Treatments</a>
+                <a href="#philosophy" class="hover:text-emerald-600 transition">Philosophy</a>
+                <a href="#contact" class="hover:text-emerald-600 transition">Contact</a>
+            </nav>
+            <a href="#contact" class="bg-emerald-600 text-white px-5 py-2 rounded-full font-medium hover:bg-emerald-700 transition shadow-sm">
+                Book Consultation
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-50 via-stone-50 to-amber-50/30 py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-emerald-100/60 text-emerald-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                    <span>Accepting New Patients</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-serif font-bold text-stone-900 leading-tight">
+                    Authentic Ayurveda for Modern Well-being
+                </h1>
+                <p class="text-lg text-stone-600 leading-relaxed">
+                    Welcome. I am <strong class="text-stone-900 font-semibold">Dr. Nimil Jain (B.A.M.S.)</strong>, an Ayurvedic physician based in Agra. I specialize in blending timeless Vedic medical wisdom with evidence-based approaches to treat chronic conditions and restore natural vitality.
+                </p>
+                <div class="pt-2 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-emerald-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-emerald-700 transition text-center shadow-md">
+                        Schedule a Visit
+                    </a>
+                    <a href="#services" class="border border-stone-300 text-stone-700 px-8 py-3 rounded-xl font-medium hover:bg-stone-100 transition text-center">
+                        Explore Treatments
+                    </a>
+                </div>
+            </div>
+            <!-- Clinic/Doctor Graphic Placeholder -->
+            <div class="relative flex justify-center">
+                <div class="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-tr from-emerald-600 to-teal-500 rounded-2xl shadow-2xl overflow-hidden relative flex items-center justify-center text-white">
+                    <i class="fa-solid fa-user-md text-8xl opacity-20 absolute"></i>
+                    <div class="p-8 text-center z-10">
+                        <p class="font-serif text-2xl italic">"Swasthasya Swasthya Rakshanam"</p>
+                        <p class="text-sm mt-4 opacity-90">— To protect the health of the healthy & cure the disease of the sick.</p>
+                    </div>
+                    <!-- Decorative Element -->
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-amber-400/20 rounded-full blur-xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Qualifications -->
+    <section id="about" class="py-20 max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8 items-start">
+            <div class="md:col-span-1">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2">The Physician</h2>
+                <p class="text-3xl font-serif font-bold text-stone-900">Meet Dr. Nimil Jain</p>
+                <div class="w-12 h-1 bg-emerald-600 mt-4 rounded"></div>
+            </div>
+            <div class="md:col-span-2 space-y-6 text-stone-600 leading-relaxed">
+                <p>
+                    As a dedicated Ayurvedic professional holding a Bachelor of Ayurvedic Medicine and Surgery (B.A.M.S.), my practice centers around root-cause healing. Rather than merely suppressing clinical symptoms, I focus on identifying metabolic imbalances, toxicity (<e class="not-italic text-stone-900">Ama</e>), and systemic disharmony.
+                </p>
+                <div class="grid sm:grid-cols-2 gap-4 pt-4 text-stone-900">
+                    <div class="flex items-start space-x-3 bg-white p-4 rounded-xl border border-stone-100 shadow-xs">
+                        <i class="fa-solid fa-graduation-cap text-emerald-600 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold">B.A.M.S. Degree</h4>
+                            <p class="text-sm text-stone-500">Bachelor of Ayurvedic Medicine & Surgery</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-white p-4 rounded-xl border border-stone-100 shadow-xs">
+                        <i class="fa-solid fa-location-dot text-emerald-600 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold">Based in Agra</h4>
+                            <p class="text-sm text-stone-500">Available for In-Clinic & Online Consultations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-stone-200 max-w-6xl mx-auto">
+
+    <!-- Clinical Services -->
+    <section id="services" class="py-20 bg-stone-100/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2">Areas of Practice</h2>
+                <p class="text-3xl font-serif font-bold text-stone-900">Holistic Clinical Care</p>
+                <p class="text-stone-600 mt-3">Tailored therapeutic interventions combining herbal pharmacology, strict dietary protocols, and lifestyle corrections.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xs border border-stone-200/60 hover:shadow-md transition group">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-stethoscope text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-stone-900 mb-3">Chronic Disease Management</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Deep clinical focus on managing long-term metabolic, digestive, joint, and lifestyle-induced disorders through individualized internal medicine.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xs border border-stone-200/60 hover:shadow-md transition group">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-apple-whole text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-stone-900 mb-3">Ahara & Vihara (Diet & Life)</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Customized dietary mapping and daily routine structuring directly aligned with your unique prakriti (body constitution) to restore innate biological equilibrium.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xs border border-stone-200/60 hover:shadow-md transition group">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-kit-medical text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-stone-900 mb-3">Preventative Wellness</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Proactive health regimens, seasonal detoxification guidelines, and immune-modulatory strategies designed to keep you naturally resilient.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Quote -->
+    <section id="philosophy" class="py-20 max-w-4xl mx-auto px-4 text-center">
+        <i class="fa-solid fa-quote-left text-4xl text-emerald-200 mb-6"></i>
+        <blockquote class="text-2xl font-serif italic text-stone-800 leading-relaxed">
+            "Ayurveda is not just about popping an herbal pill; it is a thorough re-alignment of your lifestyle, diet, and dynamic internal energies. True healing occurs when we listen to the body's subtle signs."
+        </blockquote>
+        <p class="mt-4 font-semibold text-stone-500 uppercase tracking-wider text-xs">— Dr. Nimil Jain</p>
+    </section>
+
+    <!-- Contact & Appointment Form -->
+    <section id="contact" class="py-20 bg-stone-900 text-white rounded-t-[2rem]">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+            
+            <!-- Contact details -->
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-2">Get In Touch</h2>
+                    <p class="text-3xl font-serif font-bold">Start Your Healing Journey</p>
+                    <p class="text-stone-400 mt-3 max-w-md">Reach out to schedule either an in-person clinical consultation in Agra or a comprehensive digital online appointment.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center text-emerald-400">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span class="text-stone-300 font-medium">+91 88816 64366</span>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center text-emerald-400">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="text-stone-300">Agra, Uttar Pradesh, India</span>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center text-emerald-400">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <span class="text-stone-300">By Prior Appointment Only</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simple Form -->
+            <div class="bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-xs">
+                <h3 class="text-xl font-semibold mb-6">Request a Consultation</h3>
+                <form class="space-y-4" onsubmit="alert('Thank you, Dr. Nimil will get back to you soon!'); return false;">
+                    <div>
+                        <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Full Name</label>
+                        <input type="text" required class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Phone Number</label>
+                            <input type="tel" required class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Consultation Mode</label>
+                            <select class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
+                                <option>In-Clinic (Agra)</option>
+                                <option>Online / Tele-Consultation</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Brief Health Concern</label>
+                        <textarea rows="3" class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-emerald-600 text-white font-medium py-3 rounded-lg hover:bg-emerald-500 transition shadow-lg">
+                        Submit Request
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-4 mt-16 pt-8 border-t border-white/10 text-center text-sm text-stone-500">
+            &copy; 2026 Dr. Nimil Jain. All rights reserved. | Ayurvedic Clinical Excellence.
+        </div>
+    </section>
+
+</body>
+</html>
