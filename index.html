@@ -193,22 +193,23 @@
                 </div>
             </div>
 
-            <!-- Simple Form -->
+                       <!-- Simple Form -->
             <div class="bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-xs">
                 <h3 class="text-xl font-semibold mb-6">Request a Consultation</h3>
-                <form class="space-y-4" onsubmit="alert('Thank you, Dr. Nimil will get back to you soon!'); return false;">
+                <!-- Paste your Formspree link below in the action attribute -->
+                <form action="https://formspree.io/f/xykalpzv" method="POST" class="space-y-4">
                     <div>
                         <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Full Name</label>
-                        <input type="text" required class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
+                        <input type="text" name="Patient Name" required class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Phone Number</label>
-                            <input type="tel" required class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
+                            <input type="tel" name="Phone Number" required class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
                         </div>
                         <div>
                             <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Consultation Mode</label>
-                            <select class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
+                            <select name="Consultation Mode" class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
                                 <option>In-Clinic (Agra)</option>
                                 <option>Online / Tele-Consultation</option>
                             </select>
@@ -216,12 +217,14 @@
                     </div>
                     <div>
                         <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Brief Health Concern</label>
-                        <textarea rows="3" class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition"></textarea>
+                        <textarea name="Health Concern" rows="3" class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition"></textarea>
                     </div>
                     <button type="submit" class="w-full bg-emerald-600 text-white font-medium py-3 rounded-lg hover:bg-emerald-500 transition shadow-lg">
                         Submit Request
                     </button>
                 </form>
+            </div>
+
             </div>
         </div>
         
