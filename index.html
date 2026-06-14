@@ -3,233 +3,385 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Nimil Jain | Ayurvedic Consultant</title>
-    <!-- Tailwind CSS for modern styling -->
+    <title>Dr. Nimil Jain | Leading Ayurvedic Clinic & Chronic Disease Specialist</title>
+    <!-- Tailwind CSS for high-fidelity medical layout styling -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome for clean icons -->
+    <!-- FontAwesome for medical icons and social channels -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- Header / Navigation -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-stone-100">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-leaf text-emerald-600 text-2xl"></i>
-                <span class="text-xl font-bold tracking-tight text-stone-900">Dr. Nimil Jain</span>
+    <!-- Top Medical Hotline Bar -->
+    <div class="bg-emerald-900 text-white text-xs py-2 px-4 shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 font-medium">
+            <div class="flex items-center space-x-4">
+                <span><i class="fa-solid fa-phone text-emerald-400 mr-1"></i> Helpline: +91 88816 64366</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-envelope text-emerald-400 mr-1"></i> Consultation Desk Open</span>
             </div>
-            <nav class="hidden md:flex space-x-8 font-medium text-stone-600">
-                <a href="#about" class="hover:text-emerald-600 transition">About</a>
-                <a href="#services" class="hover:text-emerald-600 transition">Treatments</a>
-                <a href="#philosophy" class="hover:text-emerald-600 transition">Philosophy</a>
-                <a href="#contact" class="hover:text-emerald-600 transition">Contact</a>
+            <div class="flex items-center space-x-3 text-emerald-200">
+                <span class="bg-emerald-800 px-2 py-0.5 rounded text-[10px] text-white font-bold uppercase animate-pulse">Live</span>
+                <span>In-Clinic Desk (Agra) & Global Tele-Medicine Video Portal</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Brand Logo Space -->
+            <div class="flex items-center space-x-3">
+                <div class="w-11 h-11 bg-emerald-700 rounded-xl flex items-center justify-center text-white shadow-md shadow-emerald-700/20">
+                    <i class="fa-solid fa-mortar-pestle text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900 block leading-none">DR. NIMIL JAIN</span>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-600 mt-1 block">Ayurvedic Medicine & Surgery (B.A.M.S.)</span>
+                </div>
+            </div>
+            
+            <!-- Mid Menu Links -->
+            <nav class="hidden lg:flex space-x-8 font-semibold text-sm text-slate-600">
+                <a href="#about" class="hover:text-emerald-600 transition">About Dr. Jain</a>
+                <a href="#diseases" class="hover:text-emerald-600 transition">Diseases Treated</a>
+                <a href="#testimonials" class="hover:text-emerald-600 transition">Patient Success</a>
+                <a href="#credentials" class="hover:text-emerald-600 transition">Certifications</a>
             </nav>
-            <a href="#contact" class="bg-emerald-600 text-white px-5 py-2 rounded-full font-medium hover:bg-emerald-700 transition shadow-sm">
-                Book Consultation
-            </a>
+
+            <!-- Quick Action Hub -->
+            <div class="flex items-center space-x-3">
+                <a href="https://wa.me/918881664366" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl text-sm font-bold hover:bg-emerald-600 transition flex items-center space-x-2 shadow-xs">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span class="hidden sm:inline">WhatsApp Doctor</span>
+                </a>
+                <a href="#appointment-desk" class="bg-amber-500 text-slate-950 px-5 py-2 rounded-xl text-sm font-bold hover:bg-amber-600 transition shadow-xs">
+                    Free Consultation File
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-emerald-50 via-stone-50 to-amber-50/30 py-20 md:py-32">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <div class="inline-flex items-center space-x-2 bg-emerald-100/60 text-emerald-800 px-3 py-1 rounded-full text-sm font-semibold">
-                    <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-                    <span>Accepting New Patients</span>
-                </div>
-                <h1 class="text-4xl md:text-5xl font-serif font-bold text-stone-900 leading-tight">
-                    Authentic Ayurveda for Modern Well-being
-                </h1>
-                <p class="text-lg text-stone-600 leading-relaxed">
-                    Welcome. I am <strong class="text-stone-900 font-semibold">Dr. Nimil Jain (B.A.M.S.)</strong>, an Ayurvedic physician based in Agra. I specialize in blending timeless Vedic medical wisdom with evidence-based approaches to treat chronic conditions and restore natural vitality.
-                </p>
-                <div class="pt-2 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#contact" class="bg-emerald-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-emerald-700 transition text-center shadow-md">
-                        Schedule a Visit
-                    </a>
-                    <a href="#services" class="border border-stone-300 text-stone-700 px-8 py-3 rounded-xl font-medium hover:bg-stone-100 transition text-center">
-                        Explore Treatments
-                    </a>
-                </div>
-            </div>
-            <!-- Clinic/Doctor Graphic Placeholder -->
-            <div class="relative flex justify-center">
-                <div class="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-tr from-emerald-600 to-teal-500 rounded-2xl shadow-2xl overflow-hidden relative flex items-center justify-center text-white">
-                    <i class="fa-solid fa-user-md text-8xl opacity-20 absolute"></i>
-                    <div class="p-8 text-center z-10">
-                        <p class="font-serif text-2xl italic">"Swasthasya Swasthya Rakshanam"</p>
-                        <p class="text-sm mt-4 opacity-90">— To protect the health of the healthy & cure the disease of the sick.</p>
-                    </div>
-                    <!-- Decorative Element -->
-                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-amber-400/20 rounded-full blur-xl"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About / Qualifications -->
-    <section id="about" class="py-20 max-w-6xl mx-auto px-4">
-        <div class="grid md:grid-cols-3 gap-8 items-start">
-            <div class="md:col-span-1">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2">The Physician</h2>
-                <p class="text-3xl font-serif font-bold text-stone-900">Meet Dr. Nimil Jain</p>
-                <div class="w-12 h-1 bg-emerald-600 mt-4 rounded"></div>
-            </div>
-            <div class="md:col-span-2 space-y-6 text-stone-600 leading-relaxed">
-                <p>
-                    As a dedicated Ayurvedic professional holding a Bachelor of Ayurvedic Medicine and Surgery (B.A.M.S.), my practice centers around root-cause healing. Rather than merely suppressing clinical symptoms, I focus on identifying metabolic imbalances, toxicity (<e class="not-italic text-stone-900">Ama</e>), and systemic disharmony.
-                </p>
-                <div class="grid sm:grid-cols-2 gap-4 pt-4 text-stone-900">
-                    <div class="flex items-start space-x-3 bg-white p-4 rounded-xl border border-stone-100 shadow-xs">
-                        <i class="fa-solid fa-graduation-cap text-emerald-600 mt-1"></i>
-                        <div>
-                            <h4 class="font-semibold">B.A.M.S. Degree</h4>
-                            <p class="text-sm text-stone-500">Bachelor of Ayurvedic Medicine & Surgery</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-3 bg-white p-4 rounded-xl border border-stone-100 shadow-xs">
-                        <i class="fa-solid fa-location-dot text-emerald-600 mt-1"></i>
-                        <div>
-                            <h4 class="font-semibold">Based in Agra</h4>
-                            <p class="text-sm text-stone-500">Available for In-Clinic & Online Consultations</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <hr class="border-stone-200 max-w-6xl mx-auto">
-
-    <!-- Clinical Services -->
-    <section id="services" class="py-20 bg-stone-100/50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2">Areas of Practice</h2>
-                <p class="text-3xl font-serif font-bold text-stone-900">Holistic Clinical Care</p>
-                <p class="text-stone-600 mt-3">Tailored therapeutic interventions combining herbal pharmacology, strict dietary protocols, and lifestyle corrections.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-xs border border-stone-200/60 hover:shadow-md transition group">
-                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-stethoscope text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-stone-900 mb-3">Chronic Disease Management</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">
-                        Deep clinical focus on managing long-term metabolic, digestive, joint, and lifestyle-induced disorders through individualized internal medicine.
-                    </p>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-xs border border-stone-200/60 hover:shadow-md transition group">
-                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-apple-whole text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-stone-900 mb-3">Ahara & Vihara (Diet & Life)</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">
-                        Customized dietary mapping and daily routine structuring directly aligned with your unique prakriti (body constitution) to restore innate biological equilibrium.
-                    </p>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-xs border border-stone-200/60 hover:shadow-md transition group">
-                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-kit-medical text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-stone-900 mb-3">Preventative Wellness</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">
-                        Proactive health regimens, seasonal detoxification guidelines, and immune-modulatory strategies designed to keep you naturally resilient.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Philosophy Quote -->
-    <section id="philosophy" class="py-20 max-w-4xl mx-auto px-4 text-center">
-        <i class="fa-solid fa-quote-left text-4xl text-emerald-200 mb-6"></i>
-        <blockquote class="text-2xl font-serif italic text-stone-800 leading-relaxed">
-            "Ayurveda is not just about popping an herbal pill; it is a thorough re-alignment of your lifestyle, diet, and dynamic internal energies. True healing occurs when we listen to the body's subtle signs."
-        </blockquote>
-        <p class="mt-4 font-semibold text-stone-500 uppercase tracking-wider text-xs">— Dr. Nimil Jain</p>
-    </section>
-
-    <!-- Contact & Appointment Form -->
-    <section id="contact" class="py-20 bg-stone-900 text-white rounded-t-[2rem]">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+    <!-- Hero / Main Digital Hospital Front Desk -->
+    <section class="relative bg-gradient-to-br from-emerald-950 via-emerald-900 to-slate-900 text-white py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-12 items-center relative z-10">
             
-            <!-- Contact details -->
-            <div class="space-y-8">
-                <div>
-                    <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-2">Get In Touch</h2>
-                    <p class="text-3xl font-serif font-bold">Start Your Healing Journey</p>
-                    <p class="text-stone-400 mt-3 max-w-md">Reach out to schedule either an in-person clinical consultation in Agra or a comprehensive digital online appointment.</p>
+            <!-- Left Info Column -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-emerald-800/80 border border-emerald-700 text-emerald-300 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <span>99% Successful Root-Cause Treatment Rate</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight">
+                    Say Goodbye to Chronic Diseases Permanent with Ayurveda
+                </h1>
+                <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl">
+                    Skip short-term chemical pill suppressions. Dr. Sharda-inspired clinical mapping blends pure traditional Veda-pharmacology with structured dietary interventions to eliminate disease straight from its molecular metabolic root.
+                </p>
+                
+                <!-- Quick Trust Badges -->
+                <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10 max-w-lg">
+                    <div>
+                        <span class="text-2xl font-bold text-amber-400 block font-serif">100%</span>
+                        <span class="text-xs text-slate-400 block mt-1">Pure Herbal Extracts</span>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-bold text-amber-400 block font-serif">B.A.M.S</span>
+                        <span class="text-xs text-slate-400 block mt-1">Certified Physician</span>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-bold text-amber-400 block font-serif">Agra</span>
+                        <span class="text-xs text-slate-400 block mt-1">Clinical Hub Location</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Visual Authority Column -->
+            <div class="lg:col-span-5 bg-white text-slate-900 p-8 rounded-3xl shadow-2xl space-y-6 border border-slate-100">
+                <div class="text-center pb-4 border-b border-slate-100">
+                    <h3 class="text-lg font-bold text-slate-900">Dr. Sharda Style Intake Portal</h3>
+                    <p class="text-xs text-slate-500 mt-1">Skip the clinic queues — File your medical parameters instantly</p>
                 </div>
                 
                 <div class="space-y-4">
-                    <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center text-emerald-400">
-                            <i class="fa-solid fa-phone"></i>
+                    <a href="#appointment-desk" class="w-full bg-emerald-600 text-white font-bold py-3 px-4 rounded-xl hover:bg-emerald-700 transition flex items-center justify-between shadow-md">
+                        <span><i class="fa-solid fa-file-waveform mr-2"></i> Open Digital Case Sheet</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                    <a href="https://wa.me/918881664366" target="_blank" class="w-full bg-slate-100 text-slate-800 font-bold py-3 px-4 rounded-xl hover:bg-slate-200 transition flex items-center justify-between border border-slate-200">
+                        <span><i class="fa-brands fa-whatsapp text-emerald-600 mr-2"></i> Submit Reports via WhatsApp</span>
+                        <i class="fa-solid fa-paperclip text-xs text-slate-400"></i>
+                    </a>
+                </div>
+
+                <div class="bg-amber-50 rounded-xl p-4 border border-amber-200/60 flex items-start space-x-3">
+                    <i class="fa-solid fa-circle-exclamation text-amber-600 mt-0.5 text-base"></i>
+                    <p class="text-xs text-amber-900 leading-relaxed font-medium">
+                        <strong>Urgent Note:</strong> Chronic conditions like Joint Pains, PCOD, and Gut Pathologies require deep evaluation. Please keep your blood diagnostic files ready.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disease Treatment Categories (The Signature Dr. Sharda Grid Layout) -->
+    <section id="diseases" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block mb-2">Specialized Medical Index</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900">Diseases We Treat Successfully</h2>
+                <p class="text-slate-600 mt-3 text-sm">We provide customized, highly successful Ayurvedic solutions for chronic conditions where conventional treatments offer only temporary relief.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Disease Item 1: Joint & Bone -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl">
+                            <i class="fa-solid fa-bone"></i>
                         </div>
-                        <span class="text-stone-300 font-medium">+91 88816 64366</span>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Joint & Bone Care</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+                            Complete permanent recovery maps for Rheumatoid Arthritis, Osteoarthritis, Cervical Spondylitis, and Gout by balancing Vata Dosha.
+                        </p>
                     </div>
-                    
-                    <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center text-emerald-400">
-                            <i class="fa-solid fa-location-dot"></i>
+                    <a href="#appointment-desk" class="mt-4 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+                </div>
+
+                <!-- Disease Item 2: Women's Clinic -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl">
+                            <i class="fa-solid fa-person-dress"></i>
                         </div>
-                        <span class="text-stone-300">Agra, Uttar Pradesh, India</span>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Women's Core Disorders</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+                            Root hormonal balancing treatments covering PCOS, PCOD, Thyroid imbalances, irregular cycles, and metabolic weight optimization.
+                        </p>
                     </div>
-                    
-                    <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center text-emerald-400">
-                            <i class="fa-solid fa-clock"></i>
+                    <a href="#appointment-desk" class="mt-4 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+                </div>
+
+                <!-- Disease Item 3: Gastro / Digestive -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl">
+                            <i class="fa-solid fa-stomach"></i>
                         </div>
-                        <span class="text-stone-300">By Prior Appointment Only</span>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Gastrointestinal Desk</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+                            Eliminate chronic acidity, IBS (Irritable Bowel Syndrome), Constipation, Fatty Liver conditions, and persistent toxic buildup (Ama).
+                        </p>
+                    </div>
+                    <a href="#appointment-desk" class="mt-4 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+                </div>
+
+                <!-- Disease Item 4: Skin Disorders -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl">
+                            <i class="fa-solid fa-hand-dots"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Chronic Skin Care</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+                            Deep internal blood purification programs targeted to resolve Psoriasis, Eczema, Severe Acne, and chronic allergic hives.
+                        </p>
+                    </div>
+                    <a href="#appointment-desk" class="mt-4 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Patient Testimonials Block -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block mb-2">Real Recoveries</span>
+                    <h2 class="text-3xl font-serif font-bold text-slate-900">Patient Success Testimonials</h2>
+                </div>
+                <p class="text-slate-500 text-sm max-w-md mt-2 md:mt-0">See verified clinical recovery outcomes from real patients who reversed long-term ailments using our protocols.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-slate-200 absolute top-6 right-6"></i>
+                    <div class="flex items-center space-x-1 text-amber-500 text-xs mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 text-sm leading-relaxed italic">
+                        "I was suffering from severe joint pain and swelling for over 4 years. Allopathic medicines only gave me temporary relief for hours. After starting Dr. Nimil Jain's structured root-cause treatment and strict dietary changes, my swelling dropped completely in months. Highly recommended!"
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-slate-200/60 flex justify-between items-center text-xs">
+                        <div>
+                            <strong class="text-slate-900 block font-semibold">Amit Sharma</strong>
+                            <span class="text-slate-400 block mt-0.5">Recovered from Chronic Joint Inflammation</span>
+                        </div>
+                        <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-sm font-bold tracking-wide uppercase text-[9px]">Verified Case</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-slate-200 absolute top-6 right-6"></i>
+                    <div class="flex items-center space-x-1 text-amber-500 text-xs mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 text-sm leading-relaxed italic">
+                        "Severe gut issues and bloating made my work life impossible. Dr. Jain accurately identified my dosha block and mapped a personalized diet plan along with pure herbal extracts. My digestive fire feels completely restored now."
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-slate-200/60 flex justify-between items-center text-xs">
+                        <div>
+                            <strong class="text-slate-900 block font-semibold">Priya Patel</strong>
+                            <span class="text-slate-400 block mt-0.5">Recovered from Severe IBS & Acid Build-up</span>
+                        </div>
+                        <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-sm font-bold tracking-wide uppercase text-[9px]">Verified Case</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials & Uploaded Verification Gallery -->
+    <section id="credentials" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-12 text-center lg:text-left">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block mb-2">Verified Framework</span>
+                <h2 class="text-3xl font-serif font-bold text-slate-900">Clinical Expertise & Certifications</h2>
+                <div class="w-12 h-1 bg-emerald-600 mt-3 rounded mx-auto lg:mx-0"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60 group">
+                    <div class="h-60 bg-slate-300 overflow-hidden">
+                        <img src="profile.jpg" alt="Dr. Nimil Jain Consultation Desk" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[9px] font-extrabold uppercase tracking-wider text-emerald-600 block">Agra Headquarters</span>
+                        <h4 class="text-base font-bold text-slate-900 mt-1">Medical Consultations</h4>
+                        <p class="text-slate-500 text-xs mt-1">In-person holistic diagnosis and custom metabolic profile evaluations built directly in Agra.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60 group">
+                    <div class="h-60 bg-slate-300 overflow-hidden">
+                        <img src="award1.jpg" alt="Ayurvedic Merit Award" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[9px] font-extrabold uppercase tracking-wider text-emerald-600 block">Professional Merits</span>
+                        <h4 class="text-base font-bold text-slate-900 mt-1">Awards & Certification</h4>
+                        <p class="text-slate-500 text-xs mt-1">Formal qualifications and industry recognitions proving elite clinical standards in herbal safety.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60 group">
+                    <div class="h-60 bg-slate-300 overflow-hidden">
+                        <img src="clinic.jpg" alt="Clinical Infrastructure Room" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[9px] font-extrabold uppercase tracking-wider text-emerald-600 block">Infrastructure</span>
+                        <h4 class="text-base font-bold text-slate-900 mt-1">Consultation Desk Layout</h4>
+                        <p class="text-slate-500 text-xs mt-1">An authentic, hygienic environment optimized entirely for quiet and detailed patient health intake analyses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Full-Width Case Intake Desk (Formspree Integrated) -->
+    <section id="appointment-desk" class="py-20 bg-slate-900 text-white rounded-t-[3rem] shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-12">
+            
+            <!-- Left Info Block -->
+            <div class="lg:col-span-4 space-y-6 flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Secure Consultation Hub</span>
+                    <h2 class="text-3xl font-serif font-bold leading-tight">File Your Health Case Sheet Online</h2>
+                    <p class="text-slate-400 text-xs mt-3 leading-relaxed">
+                        Fill out this mandatory intake registry. Your specific data drops directly onto Dr. Nimil Jain's secure clinical console. Our helpline will contact you within 24 hours with custom prescription steps.
+                    </p>
+                </div>
+
+                <div class="space-y-4 bg-white/5 p-6 rounded-2xl border border-white/5 text-xs">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-phone text-emerald-400 text-base"></i>
+                        <span class="text-slate-300 font-bold">+91 88816 64366</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-location-dot text-emerald-400 text-base"></i>
+                        <span class="text-slate-300">Agra, Uttar Pradesh, India</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-slate-400">
+                        <i class="fa-solid fa-user-shield text-emerald-400 text-base"></i>
+                        <span>100% HIPAA/Privacy Encrypted Systems.</span>
                     </div>
                 </div>
             </div>
 
-                       <!-- Simple Form -->
-            <div class="bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-xs">
-                <h3 class="text-xl font-semibold mb-6">Request a Consultation</h3>
-                <!-- Paste your Formspree link below in the action attribute -->
-                <form action="https://formspree.io/f/xykalpzv" method="POST" class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Full Name</label>
-                        <input type="text" name="Patient Name" required class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
-                    </div>
-                    <div class="grid grid-cols-2 gap-4">
+            <!-- Comprehensive Clinical Medical Form -->
+            <div class="lg:col-span-8 bg-white p-8 md:p-10 rounded-2xl text-slate-800 shadow-2xl">
+                <div class="border-b border-slate-100 pb-4 mb-6 flex items-center justify-between">
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center">
+                        <i class="fa-solid fa-file-prescription text-emerald-600 mr-2 text-xl"></i> Free Medical Case Intake
+                    </h3>
+                    <span class="text-[10px] bg-emerald-50 text-emerald-700 font-bold px-2 py-1 rounded-sm uppercase tracking-wide">Primary Desk</span>
+                </div>
+
+                <!-- Update YOUR_FORM_ID with your Formspree Form ID -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Phone Number</label>
-                            <input type="tel" name="Phone Number" required class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Patient Full Name *</label>
+                            <input type="text" name="Patient Full Name" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
                         </div>
                         <div>
-                            <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Consultation Mode</label>
-                            <select name="Consultation Mode" class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition">
-                                <option>In-Clinic (Agra)</option>
-                                <option>Online / Tele-Consultation</option>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Contact Phone Number *</label>
+                            <input type="tel" name="Patient Mobile Number" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Target Chronic Disease Category *</label>
+                            <select name="Disease Category" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
+                                <option>Joint & Arthritis Disorders (Vata-Imbalance)</option>
+                                <option>Chronic PCOD / PCOS / Hormonal Imbalance</option>
+                                <option>Digestive Pathologies (IBS / Acidity / Ama)</option>
+                                <option>Severe Skin Allergies / Eczema / Psoriasis</option>
+                                <option>General Metabolic / Prevention Wellness Consultation</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Preferred Appointment Mode *</label>
+                            <select name="Preferred Consultation Mode" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
+                                <option>Digital Video Tele-Consultation (Remote)</option>
+                                <option>In-Person Visit (Agra Clinic Desk)</option>
                             </select>
                         </div>
                     </div>
-                    <div>
-                        <label class="block text-xs font-medium text-stone-400 uppercase tracking-wider mb-2">Brief Health Concern</label>
-                        <textarea name="Health Concern" rows="3" class="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-hidden focus:border-emerald-500 transition"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-emerald-600 text-white font-medium py-3 rounded-lg hover:bg-emerald-500 transition shadow-lg">
-                        Submit Request
-                    </button>
-                </form>
-            </div>
 
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Detailed Symptom History & Duration *</label>
+                        <textarea name="Patient Clinical History Details" rows="4" required placeholder="Please outline primary symptoms, how long you have had this chronic condition, and past medications used..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium text-xs transition"></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-emerald-700 text-white font-bold py-4 rounded-xl hover:bg-emerald-800 transition tracking-wide text-xs uppercase shadow-lg shadow-emerald-700/20">
+                            Submit Case Sheet For Doctor Review
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
         
-        <div class="max-w-6xl mx-auto px-4 mt-16 pt-8 border-t border-white/10 text-center text-sm text-stone-500">
-            &copy; 2026 Dr. Nimil Jain. All rights reserved. | Ayurvedic Clinical Excellence.
+        <!-- Footer -->
+        <div class="max-w-7xl mx-auto px-4 mt-20 pt-8 border-t border-white/5 text-center text-[11px] text-slate-500 leading-relaxed">
+            &copy; 2026 Dr. Nimil Jain, B.A.M.S. All rights reserved. | Inspired by Elite Ayurvedic Disease Reversal Frameworks.<br>
+            Disclaimer: Consultations are rooted in traditional Ayurvedic internal medicine protocols. In-clinic visits strictly via appointment reservation.
         </div>
     </section>
 
