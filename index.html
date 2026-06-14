@@ -338,10 +338,21 @@
                             <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Patient Full Name *</label>
                             <input type="text" name="Patient Full Name" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
                         </div>
-                        <div>
+                                                <div>
                             <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Contact Phone Number *</label>
-                            <input type="tel" name="Patient Mobile Number" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
+                            <input 
+                                type="tel" 
+                                name="Patient Mobile Number" 
+                                required 
+                                pattern="[6-9][0-9]{9}"
+                                maxlength="10"
+                                placeholder="Enter 10-digit mobile number"
+                                oninvalid="this.setCustomValidity('Please enter a valid 10-digit Indian mobile number starting with 6-9')"
+                                oninput="this.setCustomValidity('')"
+                                class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs"
+                            >
                         </div>
+
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
