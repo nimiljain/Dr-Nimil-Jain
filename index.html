@@ -28,21 +28,28 @@
     <!-- Main Navigation Header -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <!-- Brand Logo Space -->
-            <div class="flex items-center space-x-3">
-                <div class="w-11 h-11 bg-emerald-700 rounded-xl flex items-center justify-center text-white shadow-md shadow-emerald-700/20">
-                    <i class="fa-solid fa-mortar-pestle text-xl"></i>
-                </div>
-                <div>
-                    <span class="text-xl font-extrabold tracking-tight text-slate-900 block leading-none">DR. NIMIL JAIN</span>
+            <!-- Brand Logo Space with Scalable Vector Crest -->
+            <div class="flex items-center space-x-4 py-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-11 h-11 drop-shadow-sm">
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="4 2" opacity="0.6" />
+                    <path d="M50 8 C68 8, 84 14, 84 32 C84 56, 64 78, 50 88 C36 78, 16 56, 16 32 C16 14, 32 8, 50 8 Z" fill="#047857" />
+                    <line x1="50" y1="22" x2="50" y2="74" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+                    <path d="M50 36 C32 24, 26 46, 50 56 Z" fill="#A7F3D0" opacity="0.9" />
+                    <path d="M50 36 C68 24, 74 46, 50 56 Z" fill="#34D399" />
+                    <circle cx="50" cy="22" r="4.5" fill="#F59E0B" />
+                    <circle cx="50" cy="74" r="3.5" fill="#F59E0B" />
+                </svg>
+                <div class="flex flex-col">
+                    <span class="text-lg font-extrabold tracking-tight text-slate-900 block leading-none font-serif">DR. NIMIL JAIN</span>
                     <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-600 mt-1 block">Ayurvedic Medicine & Surgery (B.A.M.S.)</span>
                 </div>
             </div>
             
             <!-- Mid Menu Links -->
-            <nav class="hidden lg:flex space-x-8 font-semibold text-sm text-slate-600">
-                <a href="#about" class="hover:text-emerald-600 transition">About Dr. Jain</a>
+            <nav class="hidden lg:flex space-x-7 font-semibold text-sm text-slate-600">
+                <a href="#about" class="hover:text-emerald-600 transition">About</a>
                 <a href="#diseases" class="hover:text-emerald-600 transition">Diseases Treated</a>
+                <a href="#products-catalogue" class="hover:text-emerald-600 transition text-emerald-700 font-bold">🌿 Medicine Catalogue</a>
                 <a href="#testimonials" class="hover:text-emerald-600 transition">Patient Success</a>
                 <a href="#credentials" class="hover:text-emerald-600 transition">Certifications</a>
             </nav>
@@ -75,7 +82,7 @@
                     Say Goodbye to Chronic Diseases Permanently with Ayurveda
                 </h1>
                 <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl">
-                    Skip short-term chemical pill suppressions. Dr. Sharda-inspired clinical mapping blends pure traditional Veda-pharmacology with structured dietary interventions to eliminate disease straight from its molecular metabolic root.
+                    Skip short-term chemical pill suppressions. Dr. Sharda-inspired clinical mapping blends pure traditional Veda-pharmacology with structured dietary interventions to eliminate physical ailments and neuro-psychiatric distress straight from the metabolic root.
                 </p>
                 
                 <!-- Quick Trust Badges -->
@@ -116,9 +123,28 @@
                 <div class="bg-amber-50 rounded-xl p-4 border border-amber-200/60 flex items-start space-x-3">
                     <i class="fa-solid fa-circle-exclamation text-amber-600 mt-0.5 text-base"></i>
                     <p class="text-xs text-amber-900 leading-relaxed font-medium">
-                        <strong>Urgent Note:</strong> Chronic conditions like Joint Pains, PCOD, and Gut Pathologies require deep evaluation. Please keep your blood diagnostic files ready.
+                        <strong>Urgent Note:</strong> Chronic conditions like Mental Depression, Joint Pains, PCOD, and Gut Pathologies require deep evaluation. Please keep your past diagnostic records ready.
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 max-w-7xl mx-auto px-4 bg-white rounded-2xl shadow-xs mt-8 border border-slate-100">
+        <div class="grid md:grid-cols-3 gap-8 items-start">
+            <div>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2">The Physician</h2>
+                <p class="text-3xl font-serif font-bold text-slate-900">Meet Dr. Nimil Jain</p>
+                <div class="w-12 h-1 bg-emerald-600 mt-4 rounded"></div>
+            </div>
+            <div class="md:col-span-2 space-y-4 text-slate-600 text-sm leading-relaxed">
+                <p>
+                    As an Ayurvedic physician holding a Bachelor of Ayurvedic Medicine and Surgery (B.A.M.S.), my clinical methodologies concentrate strictly on root-cause metabolic diagnosis. Rather than merely pacifying clinical symptoms temporarily, my workflows aim to neutralize deep-rooted cellular toxins (<e class="not-italic text-slate-900 font-medium">Ama</e>) and restore neurological and psychological stability.
+                </p>
+                <p>
+                    By merging ancient Veda pharmacology with structured modern dietary framework analyses, we safely address complex structural imbalances within the gastrointestinal tract, endocrine system, and psychiatric neural path networks.
+                </p>
             </div>
         </div>
     </section>
@@ -132,111 +158,327 @@
                 <p class="text-slate-600 mt-3 text-sm">We provide customized, highly successful Ayurvedic solutions for chronic conditions where conventional treatments offer only temporary relief.</p>
             </div>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Disease Item 1: Joint & Bone -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Disease Item: Mental Health & Depression -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl">
+                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl group-hover:bg-purple-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Mental Health & Depression</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+                            Deep-acting Medhya Rasayana treatments formulated to balance Satva, Rajas, and Tamas mental attributes. Reverses clinical depression, severe anxiety loops, panic disorders, insomnia, and occupational nervous burnout.
+                        </p>
+                    </div>
+                    <a href="#appointment-desk" class="mt-5 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+                </div>
+
+                <!-- Disease Item: Women's Clinic -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl group-hover:bg-rose-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-person-dress"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Women's Hormonal Disorders</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+                            Root hormonal balancing treatments covering PCOS, PCOD, delayed periods, ovarian cysts, thyroid imbalances, irregular cycles, and metabolic weight optimization without chemical hormones.
+                        </p>
+                    </div>
+                    <a href="#appointment-desk" class="mt-5 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+                </div>
+
+                <!-- Disease Item: Joint & Bone -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl group-hover:bg-orange-600 group-hover:text-white transition">
                             <i class="fa-solid fa-bone"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Joint & Bone Care</h3>
                         <p class="text-slate-500 text-xs mt-2 leading-relaxed">
-                            Complete permanent recovery maps for Rheumatoid Arthritis, Osteoarthritis, Cervical Spondylitis, and Gout by balancing Vata Dosha.
+                            Complete permanent recovery maps for Rheumatoid Arthritis, Osteoarthritis, Cervical Spondylitis, Sciatica, and chronic Gout flare-ups by purifying synovial pathways and balancing Vata Dosha.
                         </p>
                     </div>
-                    <a href="#appointment-desk" class="mt-4 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+                    <a href="#appointment-desk" class="mt-5 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
                 </div>
 
-                <!-- Disease Item 2: Women's Clinic -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
+                <!-- Disease Item: Gastro / Digestive -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl">
-                            <i class="fa-solid fa-person-dress"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Women's Core Disorders</h3>
-                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
-                            Root hormonal balancing treatments covering PCOS, PCOD, Thyroid imbalances, irregular cycles, and metabolic weight optimization.
-                        </p>
-                    </div>
-                    <a href="#appointment-desk" class="mt-4 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-                </div>
-
-                <!-- Disease Item 3: Gastro / Digestive -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl">
+                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl group-hover:bg-blue-600 group-hover:text-white transition">
                             <i class="fa-solid fa-stomach"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Gastrointestinal Desk</h3>
                         <p class="text-slate-500 text-xs mt-2 leading-relaxed">
-                            Eliminate chronic acidity, IBS (Irritable Bowel Syndrome), Constipation, Fatty Liver conditions, and persistent toxic buildup (Ama).
+                            Eliminate chronic hyperacidity, IBS (Irritable Bowel Syndrome), chronic Constipation, Fatty Liver conditions, and persistent toxic metabolic buildup (Ama) via gut Agni restoration.
                         </p>
                     </div>
-                    <a href="#appointment-desk" class="mt-4 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+                    <a href="#appointment-desk" class="mt-5 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
                 </div>
 
-                <!-- Disease Item 4: Skin Disorders -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
+                <!-- Disease Item: Skin Disorders -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl">
+                        <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl group-hover:bg-teal-600 group-hover:text-white transition">
                             <i class="fa-solid fa-hand-dots"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Chronic Skin Care</h3>
                         <p class="text-slate-500 text-xs mt-2 leading-relaxed">
-                            Deep internal blood purification programs targeted to resolve Psoriasis, Eczema, Severe Acne, and chronic allergic hives.
+                            Deep internal blood purification and tissue detoxification programs targeted explicitly to resolve stubborn Psoriasis, Eczema, Severe cystic Acne, and chronic allergic hives.
                         </p>
                     </div>
-                    <a href="#appointment-desk" class="mt-4 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+                    <a href="#appointment-desk" class="mt-5 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
                 </div>
+
+                <!-- Disease Item: Metabolic & Respiratory Detox -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl group-hover:bg-emerald-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-lungs"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Metabolic & Respiratory Detox</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+                            Clinical cellular clearing protocols structured to completely clear heavy toxin accumulations from the lungs and liver, restoring baseline cellular oxygenation levels.
+                        </p>
+                    </div>
+                    <a href="#appointment-desk" class="mt-5 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Specialized Care <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM PRODUCT CATALOGUE SECTION -->
+    <section id="products-catalogue" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block mb-2">Authentic Formulations</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900">Targeted Ayurvedic Health Kits</h2>
+                <div class="w-16 h-1 bg-emerald-600 mt-3 mx-auto rounded"></div>
+                <p class="text-slate-600 mt-4 text-sm">Pure, bioactive botanical extract configurations prepared under strict clinical supervision to reverse chronic structural imbalances.</p>
+            </div>
+
+            <!-- Products Grid Catalogue -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Product 1: PCOD KIT -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+                    <div>
+                        <div class="w-full h-44 bg-rose-50 rounded-xl flex items-center justify-center text-rose-600 mb-4 relative">
+                            <i class="fa-solid fa-kit-medical text-5xl opacity-40"></i>
+                            <span class="absolute top-3 right-3 bg-rose-100 text-rose-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Hormonal Balance</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-tight">PCOD Kit</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">Comprehensive hormonal corrective cycle designed to target baseline endocrine system configurations naturally.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100">
+                        <div class="flex items-baseline space-x-2 mb-3"><span class="text-xl font-black text-slate-900">₹1,500</span><span class="text-xs text-slate-400 line-through">₹2,200</span></div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="#appointment-desk" class="bg-emerald-600 text-white text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-700 transition">Order Kit</a>
+                            <a href="https://wa.me/918881664366?text=Hello%20Dr.%20Nimil%20Jain,%20I%20want%20to%20inquire%20about%20the%20PCOD%20Kit." target="_blank" class="border border-emerald-200 text-emerald-700 text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-50 transition"><i class="fa-brands fa-whatsapp mr-1"></i>Chat</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: PCOD WITH DELAYED PERIODS -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+                    <div>
+                        <div class="w-full h-44 bg-rose-50 rounded-xl flex items-center justify-center text-rose-700 mb-4 relative">
+                            <i class="fa-solid fa-clock text-5xl opacity-30"></i>
+                            <span class="absolute top-3 right-3 bg-rose-100 text-rose-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Cycle Regulation</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-tight">PCOD with Delayed Periods Kit</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">Advanced regulation configuration built to aid systematic ovarian health and timely menstrual tracking loops.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100">
+                        <div class="flex items-baseline space-x-2 mb-3"><span class="text-xl font-black text-slate-900">₹1,500</span><span class="text-xs text-slate-400 line-through">₹2,400</span></div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="#appointment-desk" class="bg-emerald-600 text-white text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-700 transition">Order Kit</a>
+                            <a href="https://wa.me/918881664366?text=Hello%20Dr.%20Nimil%20Jain,%20I%20want%20to%20inquire%20about%20the%20PCOD%20with%20Delayed%20Periods%20Kit." target="_blank" class="border border-emerald-200 text-emerald-700 text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-50 transition"><i class="fa-brands fa-whatsapp mr-1"></i>Chat</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: LIVER DETOX -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+                    <div>
+                        <div class="w-full h-44 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-4 relative">
+                            <i class="fa-solid fa-shield-halved text-5xl opacity-40"></i>
+                            <span class="absolute top-3 right-3 bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Metabolism</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-tight">Liver Detox Kit</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">Deep internal metabolic purification map to clear congestion (Ama), support bile health, and cleanse tissues.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100">
+                        <div class="flex items-baseline space-x-2 mb-3"><span class="text-xl font-black text-slate-900">₹1,500</span><span class="text-xs text-slate-400 line-through">₹1,950</span></div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="#appointment-desk" class="bg-emerald-600 text-white text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-700 transition">Order Kit</a>
+                            <a href="https://wa.me/918881664366?text=Hello%20Dr.%20Nimil%20Jain,%20I%20want%20to%20inquire%20about%20the%20Liver%20Detox%20Kit." target="_blank" class="border border-emerald-200 text-emerald-700 text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-50 transition"><i class="fa-brands fa-whatsapp mr-1"></i>Chat</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: LUNGS DETOX -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+                    <div>
+                        <div class="w-full h-44 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-4 relative">
+                            <i class="fa-solid fa-lungs text-5xl opacity-40"></i>
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Respiratory</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-tight">Lungs Detox Kit</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">Optimizes respiratory pathway elasticity, clearing heavy systemic Kapha congestion induced by chemical toxins.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100">
+                        <div class="flex items-baseline space-x-2 mb-3"><span class="text-xl font-black text-slate-900">₹1,500</span><span class="text-xs text-slate-400 line-through">₹2,100</span></div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="#appointment-desk" class="bg-emerald-600 text-white text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-700 transition">Order Kit</a>
+                            <a href="https://wa.me/918881664366?text=Hello%20Dr.%20Nimil%20Jain,%20I%20want%20to%20inquire%20about%20the%20Lungs%20Detox%20Kit." target="_blank" class="border border-emerald-200 text-emerald-700 text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-50 transition"><i class="fa-brands fa-whatsapp mr-1"></i>Chat</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: WEIGHT MANAGEMENT -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+                    <div>
+                        <div class="w-full h-44 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-4 relative">
+                            <i class="fa-solid fa-gauge-high text-5xl opacity-40"></i>
+                            <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Medo-Dhatu</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-tight">Weight Management Kit</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">Regulates operational lipid processing profiles, fires up sluggish metabolism, and addresses long-term fat tissue variables safely.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100">
+                        <div class="flex items-baseline space-x-2 mb-3"><span class="text-xl font-black text-slate-900">₹1,500</span><span class="text-xs text-slate-400 line-through">₹2,300</span></div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="#appointment-desk" class="bg-emerald-600 text-white text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-700 transition">Order Kit</a>
+                            <a href="https://wa.me/918881664366?text=Hello%20Dr.%20Nimil%20Jain,%20I%20want%20to%20inquire%20about%20the%20Weight%20Management%20Kit." target="_blank" class="border border-emerald-200 text-emerald-700 text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-50 transition"><i class="fa-brands fa-whatsapp mr-1"></i>Chat</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: MEN HEALTH -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+                    <div>
+                        <div class="w-full h-44 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-4 relative">
+                            <i class="fa-solid fa-person text-5xl opacity-40"></i>
+                            <span class="absolute top-3 right-3 bg-indigo-100 text-indigo-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Vital Care</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-tight">Men Health Kit</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">Comprehensive baseline restorative nourishment supporting target tissue integrity, endocrine health, and long-term stamina profiles.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100">
+                        <div class="flex items-baseline space-x-2 mb-3"><span class="text-xl font-black text-slate-900">₹1,500</span><span class="text-xs text-slate-400 line-through">₹2,000</span></div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="#appointment-desk" class="bg-emerald-600 text-white text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-700 transition">Order Kit</a>
+                            <a href="https://wa.me/918881664366?text=Hello%20Dr.%20Nimil%20Jain,%20I%20want%20to%20inquire%20about%20the%20Men%20Health%20Kit." target="_blank" class="border border-emerald-200 text-emerald-700 text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-50 transition"><i class="fa-brands fa-whatsapp mr-1"></i>Chat</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: MEN ENERGY -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 p-5 flex flex-col justify-between shadow-xs hover:shadow-md transition">
+                    <div>
+                        <div class="w-full h-44 bg-indigo-50 rounded-xl flex items-center justify-center text-amber-500 mb-4 relative">
+                            <i class="fa-solid fa-bolt text-5xl opacity-40"></i>
+                            <span class="absolute top-3 right-3 bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Ojas / Vigor</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-tight">Men Energy Kit</h3>
+                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">Potent Rasayana system targeted explicitly to counter fatigue, boost nervous system tone, and replenish essential Ojas energy pathways.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100">
+                        <div class="flex items-baseline space-x-2 mb-3"><span class="text-xl font-black text-slate-900">₹1,500</span><span class="text-xs text-slate-400 line-through">₹2,500</span></div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="#appointment-desk" class="bg-emerald-600 text-white text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-700 transition">Order Kit</a>
+                            <a href="https://wa.me/918881664366?text=Hello%20Dr.%20Nimil%20Jain,%20I%20want%20to%20inquire%20about%20the%20Men%20Energy%20Kit." target="_blank" class="border border-emerald-200 text-emerald-700 text-[11px] font-bold py-2 px-1 rounded-lg text-center hover:bg-emerald-50 transition"><i class="fa-brands fa-whatsapp mr-1"></i>Chat</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Interactive Patient Testimonials Block -->
-    <section id="testimonials" class="py-20 bg-white">
+    <section id="testimonials" class="py-20 bg-slate-50 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block mb-2">Real Recoveries</span>
                     <h2 class="text-3xl font-serif font-bold text-slate-900">Patient Success Testimonials</h2>
                 </div>
-                <p class="text-slate-500 text-sm max-w-md mt-2 md:mt-0">See verified clinical recovery outcomes from real patients who reversed long-term ailments using our protocols.</p>
+                <p class="text-slate-500 text-sm max-w-md mt-2 md:mt-0">See verified clinical recovery outcomes from real patients who reversed long-term ailments across our core treatment categories.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 relative">
-                    <i class="fa-solid fa-quote-left text-4xl text-slate-200 absolute top-6 right-6"></i>
+                <!-- Testimonial 1: Mental Health -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 relative shadow-xs">
+                    <i class="fa-solid fa-quote-left text-4xl text-slate-100 absolute top-6 right-6"></i>
                     <div class="flex items-center space-x-1 text-amber-500 text-xs mb-4">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
                     <p class="text-slate-700 text-sm leading-relaxed italic">
-                        "I was suffering from severe joint pain and swelling for over 4 years. Allopathic medicines only gave me temporary relief for hours. After starting Dr. Nimil Jain's structured root-cause treatment and strict dietary changes, my swelling dropped completely in months. Highly recommended!"
+                        "Severe mental depression and anxiety loops made it impossible for me to focus or sleep for over 2 years. Prescribed sedative pills only left me drowsy. Dr. Nimil Jain's target neuro-psychiatric strategy and daily routine realignment completely stabilized my mind. I feel active and genuinely happy again."
                     </p>
-                    <div class="mt-6 pt-4 border-t border-slate-200/60 flex justify-between items-center text-xs">
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
                         <div>
-                            <strong class="text-slate-900 block font-semibold">Amit Sharma</strong>
-                            <span class="text-slate-400 block mt-0.5">Recovered from Chronic Joint Inflammation</span>
+                            <strong class="text-slate-900 block font-semibold">Rajesh Malhotra</strong>
+                            <span class="text-slate-400 block mt-0.5">Recovered from Clinical Depression & Insomnia</span>
                         </div>
-                        <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-sm font-bold tracking-wide uppercase text-[9px]">Verified Case</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded-sm font-bold tracking-wide uppercase text-[9px]">Mental Health Track</span>
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 relative">
-                    <i class="fa-solid fa-quote-left text-4xl text-slate-200 absolute top-6 right-6"></i>
+                <!-- Testimonial 2: Women's Clinic -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 relative shadow-xs">
+                    <i class="fa-solid fa-quote-left text-4xl text-slate-100 absolute top-6 right-6"></i>
                     <div class="flex items-center space-x-1 text-amber-500 text-xs mb-4">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
                     <p class="text-slate-700 text-sm leading-relaxed italic">
-                        "Severe gut issues and bloating made my work life impossible. Dr. Jain accurately identified my dosha block and mapped a personalized diet plan along with pure herbal extracts. My digestive fire feels completely restored now."
+                        "I was struggling with heavy PCOD, facing severely delayed periods for 8-10 months along with sudden metabolic weight issues. Dr. Jain's targeted PCOD formulation kits and dietary mapping regularized my cycles perfectly within just 90 days. Incredible care!"
                     </p>
-                    <div class="mt-6 pt-4 border-t border-slate-200/60 flex justify-between items-center text-xs">
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+                        <div>
+                            <strong class="text-slate-900 block font-semibold">Pooja Verma</strong>
+                            <span class="text-slate-400 block mt-0.5">Recovered from Severe PCOD & Irregular Cycles</span>
+                        </div>
+                        <span class="bg-rose-100 text-rose-800 px-2 py-0.5 rounded-sm font-bold tracking-wide uppercase text-[9px]">Women's Track</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3: Joint Care -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 relative shadow-xs">
+                    <i class="fa-solid fa-quote-left text-4xl text-slate-100 absolute top-6 right-6"></i>
+                    <div class="flex items-center space-x-1 text-amber-500 text-xs mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 text-sm leading-relaxed italic">
+                        "Chronic joint swelling and severe osteoarthritis made walking painful. After trying multiple temporary painkillers, I visited Dr. Jain's clinic in Agra. By systematically balancing Vata dosha and cleansing systemic toxins, my knee mobility is completely back."
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+                        <div>
+                            <strong class="text-slate-900 block font-semibold">Amit Sharma</strong>
+                            <span class="text-slate-400 block mt-0.5">Recovered from Advanced Osteoarthritis</span>
+                        </div>
+                        <span class="bg-orange-100 text-orange-800 px-2 py-0.5 rounded-sm font-bold tracking-wide uppercase text-[9px]">Joint Track</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4: Digestive Track -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 relative shadow-xs">
+                    <i class="fa-solid fa-quote-left text-4xl text-slate-100 absolute top-6 right-6"></i>
+                    <div class="flex items-center space-x-1 text-amber-500 text-xs mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 text-sm leading-relaxed italic">
+                        "Constant severe bloating, chronic hyperacidity, and painful IBS symptoms made everyday meals stressful. The liver detox strategies and customized gut Agni formulations provided by Dr. Jain completely reset my digestive path."
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
                         <div>
                             <strong class="text-slate-900 block font-semibold">Priya Patel</strong>
-                            <span class="text-slate-400 block mt-0.5">Recovered from Severe IBS & Acid Build-up</span>
+                            <span class="text-slate-400 block mt-0.5">Recovered from Chronic IBS & Fatty Liver</span>
                         </div>
-                        <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-sm font-bold tracking-wide uppercase text-[9px]">Verified Case</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-sm font-bold tracking-wide uppercase text-[9px]">Gastro Track</span>
                     </div>
                 </div>
             </div>
@@ -302,7 +544,7 @@
                     <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Secure Consultation Hub</span>
                     <h2 class="text-3xl font-serif font-bold leading-tight">File Your Health Case Sheet Online</h2>
                     <p class="text-slate-400 text-xs mt-3 leading-relaxed">
-                        Fill out this mandatory intake registry. Your specific data drops directly onto Dr. Nimil Jain's secure clinical console. Our helpline will contact you within 24 hours with custom prescription steps.
+                        Fill out this mandatory intake registry. Your specific data drops directly onto Dr. Nimil Jain's secure clinical console via active Formspree routing. Our helpline will contact you within 24 hours with custom prescription steps.
                     </p>
                 </div>
 
@@ -338,7 +580,7 @@
                             <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Patient Full Name *</label>
                             <input type="text" name="Patient Full Name" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
                         </div>
-                                                <div>
+                        <div>
                             <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Contact Phone Number *</label>
                             <input 
                                 type="tel" 
@@ -352,18 +594,28 @@
                                 class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs"
                             >
                         </div>
-
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Target Chronic Disease Category *</label>
-                            <select name="Disease Category" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
-                                <option>Joint & Arthritis Disorders (Vata-Imbalance)</option>
-                                <option>Chronic PCOD / PCOS / Hormonal Imbalance</option>
-                                <option>Digestive Pathologies (IBS / Acidity / Ama)</option>
-                                <option>Severe Skin Allergies / Eczema / Psoriasis</option>
-                                <option>General Metabolic / Prevention Wellness Consultation</option>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Target Chronic Category / Product Purchase *</label>
+                            <select name="Disease Category or Product Selected" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
+                                <optgroup label="📋 Specialized Clinical Treatments">
+                                    <option value="Clinical Treatment: Mental Health & Depression">Mental Health / Depression / Anxiety Disorders</option>
+                                    <option value="Clinical Treatment: Women Hormonal / Delayed Periods">Women's Hormonal Disorders & Delayed Periods</option>
+                                    <option value="Clinical Treatment: Joint & Advanced Arthritis">Joint & Advanced Arthritis Care</option>
+                                    <option value="Clinical Treatment: Gastrointestinal IBS / Fatty Liver">Gastrointestinal Disorders (IBS / Fatty Liver)</option>
+                                    <option value="Clinical Treatment: Chronic Skin Allergies / Eczema">Chronic Skin Disorders (Eczema / Psoriasis)</option>
+                                </optgroup>
+                                <optgroup label="🌿 Direct Product Purchases (₹1,500 each)">
+                                    <option value="Product Order: PCOD Kit">PCOD Kit — ₹1,500</option>
+                                    <option value="Product Order: PCOD with Delayed Periods Kit">PCOD with Delayed Periods Kit — ₹1,500</option>
+                                    <option value="Product Order: Liver Detox Kit">Liver Detox Kit — ₹1,500</option>
+                                    <option value="Product Order: Lungs Detox Kit">Lungs Detox Kit — ₹1,500</option>
+                                    <option value="Product Order: Weight Management Kit">Weight Management Kit — ₹1,500</option>
+                                    <option value="Product Order: Men Health Kit">Men Health Kit — ₹1,500</option>
+                                    <option value="Product Order: Men Energy Kit">Men Energy Kit — ₹1,500</option>
+                                </optgroup>
                             </select>
                         </div>
                         <div>
