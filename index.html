@@ -9,7 +9,7 @@
     <!-- FontAwesome for medical icons and global channels -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Ultra-Premium Slideshow Gradient Animation Overlays -->
+    <!-- Slideshow Background Style Matrix -->
     <style>
         @keyframes crossFade {
             0% { opacity: 0; }
@@ -26,445 +26,244 @@
             opacity: 0;
             animation: crossFade 15s infinite ease-in-out;
         }
-        .slide-1 { background-image: linear-gradient(to right, rgba(2,45,34,0.96), rgba(15,23,42,0.9)); animation-delay: 0s; }
-        .slide-2 { background-image: linear-gradient(to right, rgba(4,47,46,0.96), rgba(15,23,42,0.9)); animation-delay: 5s; }
-        .slide-3 { background-image: linear-gradient(to right, rgba(12,40,32,0.96), rgba(15,23,42,0.9)); animation-delay: 10s; }
+        .slide-1 { background-image: linear-gradient(to right, rgba(2,45,34,0.97), rgba(15,23,42,0.93)); animation-delay: 0s; }
+        .slide-2 { background-image: linear-gradient(to right, rgba(4,47,46,0.97), rgba(15,23,42,0.93)); animation-delay: 5s; }
+        .slide-3 { background-image: linear-gradient(to right, rgba(12,40,32,0.97), rgba(15,23,42,0.93)); animation-delay: 10s; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- Top Medical Hotline Ribbon Bar -->
-    <div class="bg-emerald-950 text-white text-xs py-2.5 px-4 shadow-inner border-b border-emerald-800/40">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-2 font-medium">
+    <div class="bg-emerald-950 text-white text-xs py-2.5 px-4 shadow-inner border-b border-amber-500/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 font-medium">
             <div class="flex flex-wrap items-center justify-center gap-4">
-                <span><i class="fa-solid fa-phone text-amber-400 mr-1"></i> Helpline: +91 88816 64366</span>
+                <span><i class="fa-solid fa-phone text-amber-400 mr-1"></i> हेल्पलाइन: +91 88816 64366</span>
                 <span><i class="fa-solid fa-envelope text-amber-400 mr-1"></i> nimiljain@gmail.com</span>
             </div>
-            <div class="flex flex-wrap items-center justify-center gap-3 text-center">
-                <span class="bg-amber-500 text-slate-950 px-2 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider animate-pulse">🎉 Special Offer</span>
-                <span class="text-emerald-200 font-bold">First Consultation is 100% FREE — Book Online Anytime</span>
+            <div class="text-amber-300 font-bold text-center text-[11px] sm:text-xs">
+                प्रथम परामर्श (First Consultation) 100% मुफ्त है
             </div>
         </div>
     </div>
 
     <!-- Main Navigation Header -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <!-- Brand Logo Space with Scalable Vector Crest -->
-            <div class="flex items-center space-x-3.5 py-1">
-                <div class="w-11 h-11 bg-emerald-700 rounded-xl flex items-center justify-center text-white shadow-md shadow-emerald-700/20">
-                    <i class="fa-solid fa-mortar-pestle text-xl"></i>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-amber-500/20">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center gap-2">
+            <!-- Brand Logo Space -->
+            <div class="flex items-center space-x-2.5">
+                <div class="w-10 h-10 bg-emerald-700 rounded-xl flex items-center justify-center text-amber-400 shadow-md border border-amber-500/20 shrink-0">
+                    <i class="fa-solid fa-mortar-pestle text-lg"></i>
                 </div>
                 <div class="flex flex-col">
-                    <span class="text-xl font-black tracking-tight text-slate-900 block leading-none font-serif">DR. NIMIL JAIN</span>
-                    <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-600 mt-1 block">Ayurvedic Medicine & Surgery (B.A.M.S.)</span>
+                    <span class="text-lg font-black tracking-tight text-slate-900 block leading-none font-serif">DR. NIMIL JAIN</span>
+                    <span class="text-[9px] uppercase font-bold tracking-widest text-emerald-600 mt-1 block">Ayurvedic Physician</span>
                 </div>
             </div>
             
-            <!-- Mid Menu Links -->
-            <nav class="hidden lg:flex space-x-7 font-bold text-xs uppercase tracking-wider text-slate-600">
-                <a href="#about" class="hover:text-emerald-600 transition">Our Doctors</a>
-                <a href="#clinics" class="hover:text-emerald-600 transition">Our Hubs</a>
-                <a href="#diseases" class="hover:text-emerald-600 transition">Treatments</a>
-                <a href="shop.html" class="text-emerald-700 font-extrabold hover:text-emerald-800 transition"><i class="fa-solid fa-bag-shopping mr-1"></i>Medicines Shop</a>
-                <a href="#testimonials" class="hover:text-emerald-600 transition">Patient Success</a>
-            </nav>
-
-            <!-- Quick Action Hub -->
-            <div class="flex items-center space-x-3">
-                <a href="https://wa.me/918881664366" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-xl text-xs font-bold hover:bg-emerald-600 transition flex items-center space-x-2 shadow-xs">
-                    <i class="fa-brands fa-whatsapp text-base"></i>
-                    <span class="hidden sm:inline">WhatsApp Doctor</span>
-                </a>
-                <a href="#appointment-desk" class="bg-amber-500 text-slate-950 px-5 py-2 rounded-xl text-xs font-bold hover:bg-amber-600 transition shadow-md">
-                    Claim Free Visit
-                </a>
-            </div>
+            <!-- Direct Store Action Link: Visible on EVERY platform (Mobile + Desktop) -->
+            <a href="shop.html" class="bg-amber-500 text-slate-950 px-3 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs font-black hover:bg-amber-600 transition shadow-md border border-amber-400 flex items-center space-x-1.5 shrink-0">
+                <i class="fa-solid fa-prescription-bottle-medical text-emerald-900 animate-pulse"></i>
+                <span>🌿 औषधि स्टोर (Shop Online)</span>
+            </a>
         </div>
     </header>
 
-    <!-- Animated Background Slideshow Hero Zone -->
-    <section class="relative text-white py-24 md:py-32 overflow-hidden bg-slate-950">
-        <!-- Slideshow Containers layers -->
+    <!-- Animated Hero Zone Focusing Directly on Product Storefront -->
+    <section class="relative text-white py-16 md:py-24 overflow-hidden bg-slate-950 border-b-4 border-amber-500">
         <div class="slide-bg slide-1"></div>
         <div class="slide-bg slide-2"></div>
         <div class="slide-bg slide-3"></div>
 
         <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-12 items-center relative z-20">
-            <!-- Left Info Column -->
             <div class="lg:col-span-7 space-y-6">
-                <div class="inline-flex items-center space-x-2 bg-amber-500/20 border border-amber-500/30 text-amber-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                    <i class="fa-solid fa-globe"></i>
-                    <span>Bringing a Century of Healing Online Globally</span>
+                <div class="inline-flex items-center space-x-2 bg-amber-500/20 border border-amber-400/40 text-amber-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>100 वर्षों की प्रामाणिक शुद्ध जैन परिवार चिकित्सा परंपरा</span>
                 </div>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight">
-                    Pure Generational Ayurveda Made Simple & Accessible Worldwide
+                <h1 class="text-4xl md:text-5xl font-serif font-bold text-white leading-tight">
+                    खानदानी प्रामाणिक आयुर्वेदिक औषधियां एवं स्वास्थ्य किट
                 </h1>
-                <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl">
-                    Now, the legendary root-cause formulas of the Jain Medical Dynasty are completely online. Led by **Dr. Nimil Jain**, we deliver point-to-point, highly affordable healthcare treatments across the globe with zero billing hassle and guaranteed recovery results.
+                <p class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-2xl">
+                    जैन परिवार के **8 अनुभवी आयुर्वेदिक चिकित्सकों और 20+ योग्य डॉक्टरों की टीम** द्वारा निर्मित सिद्ध औषधियां। **डॉ. निमिल जैन** द्वारा संचालित इस डिजिटल स्टोर के माध्यम से बीमारी की जड़ पर (Point-to-Point) काम करने वाली शुद्ध जड़ी-बूटियों के रस और किट सीधे घर बैठे ऑर्डर करें।
                 </p>
 
-                <!-- High-Conversion Feature Badges -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl">
-                    <div class="bg-white/5 border border-white/10 p-3 rounded-xl flex items-center space-x-3 backdrop-blur-xs">
-                        <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
-                        <span class="text-xs text-slate-200 font-semibold">100% Free First Consultation Slot</span>
-                    </div>
-                    <div class="bg-white/5 border border-white/10 p-3 rounded-xl flex items-center space-x-3 backdrop-blur-xs">
-                        <i class="fa-solid fa-hand-holding-dollar text-amber-400 text-lg"></i>
-                        <span class="text-xs text-slate-200 font-semibold">Point-To-Point Transparent Pricing</span>
-                    </div>
-                </div>
-
-                <!-- Google Search Verification Callout Button -->
-                <div class="pt-2">
-                    <a href="https://www.google.com/search?q=Dr.+Nimil+Jain" target="_blank" class="inline-flex items-center space-x-2 bg-white text-slate-900 px-5 py-2.5 rounded-xl text-xs font-bold hover:bg-slate-100 transition shadow-md">
-                        <i class="fa-brands fa-google text-emerald-700"></i>
-                        <span>Verify Dr. Nimil Jain Profile on Google</span>
+                <!-- Prominent Store Action Hub for Mobile and Desktop -->
+                <div class="p-5 bg-white/5 border border-white/10 rounded-2xl max-w-xl backdrop-blur-xs shadow-inner">
+                    <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2"><i class="fa-solid fa-box-open mr-1"></i> ऑनलाइन फार्मेसी विभाग खुला है</h4>
+                    <p class="text-xs text-slate-300 mb-4">PCOD किट, स्वर्ण प्राशन, लिवर/लंग्स डिटॉक्स, केश तेल व दर्द निवारक मेडीकेटेड ऑयल सीधे मंगाएं।</p>
+                    <a href="shop.html" class="inline-flex items-center space-x-2 bg-amber-500 text-slate-950 font-extrabold px-6 py-3 rounded-xl text-xs uppercase tracking-wider hover:bg-amber-600 transition border border-amber-400 w-full justify-center shadow-lg">
+                        <i class="fa-solid fa-bag-shopping text-base"></i>
+                        <span>दवाइयां और हेल्थ किट देखने के लिए यहाँ क्लिक करें →</span>
                     </a>
                 </div>
             </div>
 
-            <!-- Right Visual Desk Column -->
-            <div class="lg:col-span-5 bg-white text-slate-900 p-8 rounded-3xl shadow-2xl space-y-6 border border-slate-100 relative">
-                <div class="absolute -top-3 -right-3 bg-rose-600 text-white font-extrabold text-[10px] uppercase px-3 py-1 rounded-full tracking-wider shadow-md animate-bounce">
-                    Free Slot Active
-                </div>
+            <!-- Right Fast Intake Desk -->
+            <div class="lg:col-span-5 bg-white text-slate-900 p-6 rounded-2xl shadow-2xl border-2 border-amber-500/40 space-y-4">
                 <div class="text-center pb-2 border-b border-slate-100">
-                    <h3 class="text-lg font-bold text-slate-900">Global Tele-Consultation Desk</h3>
-                    <p class="text-xs text-slate-500 mt-1">Book instantly according to your preferred time zone</p>
+                    <span class="text-[10px] bg-rose-100 text-rose-800 font-extrabold px-2.5 py-0.5 rounded-full uppercase">100% Free Slot</span>
+                    <h3 class="text-lg font-bold text-slate-900 mt-1.5">मुफ्त परामर्श केस फॉर्म</h3>
+                    <p class="text-xs text-slate-500 mt-0.5">कोई अनावश्यक जांच या फालतू फीस का झंझट नहीं—पॉइंट-टू-पॉइंट इलाज</p>
                 </div>
-                
-                <div class="space-y-3">
-                    <a href="#appointment-desk" class="w-full bg-emerald-600 text-white font-bold py-3.5 px-4 rounded-xl hover:bg-emerald-700 transition flex items-center justify-between shadow-md text-sm">
-                        <span><i class="fa-solid fa-calendar-check mr-2"></i> Lock Your Free Consultation</span>
-                        <i class="fa-solid fa-chevron-right text-xs"></i>
-                    </a>
-                    <a href="shop.html" class="w-full bg-slate-100 text-slate-800 font-bold py-3 px-4 rounded-xl text-center block border border-slate-200 text-xs">
-                        <span><i class="fa-solid fa-basket-shopping text-emerald-600 mr-2"></i> Direct Online Medicine Pharmacy</span>
-                    </a>
-                </div>
+                <a href="#appointment-desk" class="w-full bg-slate-900 text-white text-center font-bold py-3.5 rounded-xl block text-xs uppercase tracking-wide hover:bg-slate-800 transition">
+                    केस विवरण फॉर्म भरें ↓
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- EXPANDED ABOUT & THE JAIN MEDICAL LINEAGE PILLARS SECTION -->
-    <section id="about" class="py-20 bg-white border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4">
-            
-            <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block mb-2">100-Year Family Legacy</span>
-                <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900">The Heritage of the Jains: 8 Doctors, One Mission</h2>
-                <div class="w-16 h-1 bg-emerald-600 mt-3 mx-auto rounded"></div>
-                <p class="text-slate-500 text-sm mt-4">Our family has been dispensing clinically proven, proprietary Ayurvedic formulations since before India's independence, ensuring guaranteed permanent recovery rates for generations.</p>
+    <!-- Detailed About & Heritage Section -->
+    <section id="about" class="py-16 max-w-7xl mx-auto px-4 bg-white rounded-3xl shadow-xs mt-8 border border-slate-100">
+        <div class="grid lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-4 space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block">चिकित्सकीय इतिहास</span>
+                <h2 class="text-3xl font-serif font-bold text-slate-900 leading-tight">जैन परिवार की 3 पीढ़ियों का परिचय</h2>
+                <div class="w-12 h-1 bg-amber-500 rounded"></div>
+                <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
+                    <h5 class="text-xs font-bold text-amber-950 uppercase">सर्वोच्च राजकीय सम्मान</h5>
+                    <p class="text-[11px] text-amber-900 mt-1 leading-relaxed">
+                        **डॉ. महावीर प्रसाद जैन एवं डॉ. प्रदीप कुमार जैन** को उत्तर प्रदेश के माननीय उपमुख्यमंत्री श्री केशव担当 प्रसाद मौर्य जी, माननीय राज्यपाल महोदया एवं गुजरात के पूर्व मुख्यमंत्री द्वारा सम्मानित किया गया है।
+                    </p>
+                </div>
             </div>
 
-            <!-- Highly Elegant 3-Pillar Medical Grid Layout -->
-            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
-                
-                <!-- Pillar 1: Grandfather Profile -->
-                <div class="bg-gradient-to-b from-slate-50 to-white rounded-3xl p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-building-columns"></i></div>
-                        <div>
-                            <span class="text-[9px] font-extrabold uppercase tracking-wider text-slate-400 block">The Family Patriarch</span>
-                            <h3 class="text-xl font-bold text-slate-900 font-serif mt-0.5">Dr. Mahavir Prasad Jain</h3>
-                            <span class="text-xs font-semibold text-emerald-700 block mt-1">AMBS | Board of Indian Medicine, UP (Reg No: 16710)</span>
-                        </div>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            With over **65 years of venerable clinical experience**, Dr. Mahavir Prasad Jain represents the scientific backbone of our family's healthcare lineage. Working alongside his esteemed wife, **Dr. Pushplata Jain**, he successfully formalized our ancestral treatments into structured protocols. He is also a proud **Founder Member of the JITO (Jain International Trade Organisation) Lucknow Chapter**, bringing immense prestige and leadership to the family institution.
-                        </p>
+            <div class="lg:col-span-8 space-y-6">
+                <!-- Profile 1 -->
+                <div class="bg-slate-50/60 p-5 rounded-2xl border border-slate-200/60">
+                    <div class="flex items-center justify-between border-b border-slate-200/60 pb-2 mb-2">
+                        <h4 class="text-base font-bold text-slate-900 font-serif">१. डॉ. महावीर प्रसाद जैन (दादाजी)</h4>
+                        <span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded">65 वर्ष का अनुभव</span>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-2">
-                        <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-1 rounded-md border border-amber-200/40"><i class="fa-solid fa-award mr-1"></i> Deputy CM Awarded</span>
-                        <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-1 rounded-md"><i class="fa-solid fa-medal mr-1"></i> UP Governor Honored</span>
-                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        **AMBS डिग्री धारक** एवं **भारतीय चिकित्सा परिषद, उत्तर प्रदेश (Board of Indian Medicine, UP) पंजीकरण संख्या 16710** के वरिष्ठ चिकित्सक एवं **JITO लखनऊ चैप्टर के सम्मानित संस्थापक सदस्य (Founder Member)**। आपकी देखरेख में दादीजी **डॉ. पुष्पलता जैन** के सहयोग से खानदानी फॉर्मूलों का विकास हुआ।
+                    </p>
                 </div>
 
-                <!-- Pillar 2: Father Profile (Managing Director) -->
-                <div class="bg-gradient-to-b from-slate-50 to-white rounded-3xl p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between border-emerald-500/20 shadow-md">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-user-tie"></i></div>
-                        <div>
-                            <span class="text-[9px] font-extrabold uppercase tracking-wider text-emerald-700 block">Managing Director & Pharmacy Head</span>
-                            <h3 class="text-xl font-bold text-slate-900 font-serif mt-0.5">Dr. Pradeep Kumar Jain</h3>
-                            <span class="text-xs font-semibold text-slate-500 block mt-1">35+ Years Healthcare Pioneer</span>
-                        </div>
-                        <p class="text-slate-600 text-xs leading-relaxed">
-                            Dr. Pradeep Kumar Jain is a well-known, highly respected personality in Agra. He brings a stellar background of **more than 35 years of senior experience in the Pharmacy Department at S.N. Medical College, Agra**. As our Managing Director, he meticulously oversees the manufacturing and standardization of all handmade, proprietary medicines to ensure the absolute safety and point-to-point efficacy of our health kits.
-                        </p>
+                <!-- Profile 2 -->
+                <div class="bg-slate-50/60 p-5 rounded-2xl border border-slate-200/60 border-l-4 border-emerald-600">
+                    <div class="flex items-center justify-between border-b border-slate-200/60 pb-2 mb-2">
+                        <h4 class="text-base font-bold text-slate-900 font-serif">२. डॉ. प्रदीप कुमार जैन (पिताजी - मैनेजिंग डायरेक्टर)</h4>
+                        <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">35+ वर्ष का अनुभव</span>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-2">
-                        <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-2.5 py-1 rounded-md border border-amber-200/40"><i class="fa-solid fa-award mr-1"></i> Awarded by Ex-CM of Gujarat</span>
-                        <span class="bg-emerald-100 text-emerald-900 text-[10px] font-bold px-2.5 py-1 rounded-md"><i class="fa-solid fa-certificate mr-1"></i> Deputy CM Honored</span>
-                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        **S.N. Medical College (एस.एन. मेडिकल कॉलेज), आगरा के फार्मेसी विभाग में 35 से अधिक वर्षों का वरिष्ठ अनुभव।** वर्तमान में आप हमारे क्लिनिक और दवा निर्माण शाला के मैनेजिंग डायरेक्टर हैं।
+                    </p>
                 </div>
 
-                <!-- Pillar 3: Dr Nimil Jain Profile -->
-                <div class="bg-gradient-to-b from-slate-900 to-emerald-950 text-white rounded-3xl p-6 shadow-xl flex flex-col justify-between">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 bg-white/10 text-amber-400 rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-laptop-medical"></i></div>
-                        <div>
-                            <span class="text-[9px] font-extrabold uppercase tracking-wider text-emerald-400 block">4th Generation Practice Head</span>
-                            <h3 class="text-xl font-bold text-white font-serif mt-0.5">Dr. Nimil Jain</h3>
-                            <span class="text-xs font-semibold text-emerald-300 block mt-1">B.A.M.S. | Board of Indian Medicine, UP (Reg No: 72160)</span>
-                        </div>
-                        <p class="text-slate-300 text-xs leading-relaxed">
-                            The proud successor to **Vaidya Kapoor Chand Jain's** legendary pre-independence medicine tree. Dr. Nimil Jain is an **Ex-Gynoveda Doctor and an Ex-Resident at the District Hospital, Agra**, combining heavy emergency critical exposure with high-scale reproductive metabolic science. He has successfully digitized the entire 100-year legacy, creating global tele-consultation channels and an organic direct shipping web store to treat worldwide patients seamlessly.
-                        </p>
+                <!-- Profile 3 -->
+                <div class="bg-linear-to-br from-slate-900 to-emerald-950 text-white p-5 rounded-2xl border border-amber-500/30 shadow-xl">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-2 mb-2">
+                        <h4 class="text-base font-bold text-white font-serif">३. डॉ. निमिल जैन (B.A.M.S.)</h4>
+                        <span class="text-[10px] bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded">पंजीकरण संख्या: 72160</span>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-white/10 text-[11px] font-bold text-amber-400 uppercase tracking-wider"><i class="fa-solid fa-shield-halved mr-1"></i> Reg No: 72160 Active</div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        **Board of Indian Medicine, UP (Reg No: 72160)** के पंजीकृत चतुर्थ पीढ़ी के मुख्य चिकित्सक। आप **पूर्व चिकित्सक - गायनोवेदा (Ex-Gynoveda Doctor)** एवं **पूर्व रेजिडेंट डॉक्टर - जिला अस्पताल आगरा (Ex-District Hospital Agra Resident)** रह चुके हैं।
+                    </p>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- THE 4 CLINICS REGIONAL MATRIX SECTOR -->
-    <section id="clinics" class="py-16 bg-slate-100 border-b border-slate-200/60">
+    <section id="clinics" class="py-14 bg-slate-100 border-y border-slate-200/60">
         <div class="max-w-7xl mx-auto px-4">
             <div class="mb-10 text-center lg:text-left">
-                <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block mb-1">Physical Infrastructure</span>
-                <h2 class="text-2xl md:text-3xl font-serif font-bold text-slate-900">Dr. Mahavir Prasad Jain Family Clinics Across Agra</h2>
-                <p class="text-slate-500 text-xs mt-1">Our family operates 4 prominent diagnostic clinical facilities across Agra city along with several district branches.</p>
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block mb-1">आगरा जनपद शाखाएं</span>
+                <h2 class="text-2xl font-serif font-bold text-slate-900">डॉ. महावीर प्रसाद जैन परिवार के ४ मुख्य चिकित्सा केंद्र</h2>
             </div>
-            
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
-                    <div class="text-emerald-600 font-bold text-sm mb-1"><i class="fa-solid fa-location-dot mr-1"></i> Hub 1</div>
-                    <h4 class="font-bold text-slate-900 text-sm">Khandauli Desk</h4>
-                    <p class="text-[11px] text-slate-400 mt-1">Near Expressway, Agra</p>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs border-t-4 border-amber-500">
+                    <h4 class="font-bold text-slate-900 text-sm">खंदौली केंद्र</h4>
+                    <p class="text-[11px] text-slate-400 mt-1">एक्सप्रेसवे के पास, आगरा</p>
                 </div>
-                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
-                    <div class="text-emerald-600 font-bold text-sm mb-1"><i class="fa-solid fa-location-dot mr-1"></i> Hub 2</div>
-                    <h4 class="font-bold text-slate-900 text-sm">Fatehabad Road Hub</h4>
-                    <p class="text-[11px] text-slate-400 mt-1">Premium Clinic Core, Agra</p>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs border-t-4 border-amber-500">
+                    <h4 class="font-bold text-slate-900 text-sm">फतेहाबाद रोड शाखा</h4>
+                    <p class="text-[11px] text-slate-400 mt-1">ताजमहल के पास, आगरा</p>
                 </div>
-                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
-                    <div class="text-emerald-600 font-bold text-sm mb-1"><i class="fa-solid fa-location-dot mr-1"></i> Hub 3</div>
-                    <h4 class="font-bold text-slate-900 text-sm">New Agra Center</h4>
-                    <p class="text-[11px] text-slate-400 mt-1">Central Diagnostic Wing, Agra</p>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs border-t-4 border-amber-500">
+                    <h4 class="font-bold text-slate-900 text-sm">न्यू आगरा केंद्र</h4>
+                    <p class="text-[11px] text-slate-400 mt-1">केंद्रीय प्रभाग, आगरा</p>
                 </div>
-                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
-                    <div class="text-emerald-600 font-bold text-sm mb-1"><i class="fa-solid fa-location-dot mr-1"></i> Hub 4</div>
-                    <h4 class="font-bold text-slate-900 text-sm">Rajpur Chungi Wing</h4>
-                    <p class="text-[11px] text-slate-400 mt-1">Southern Division, Agra</p>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs border-t-4 border-amber-500">
+                    <h4 class="font-bold text-slate-900 text-sm">राजपुर चुंगी विंग</h4>
+                    <p class="text-[11px] text-slate-400 mt-1">दक्षिणी प्रभाग, आगरा</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Disease Treatment Categories -->
-    <section id="diseases" class="py-20 bg-slate-50">
+    <!-- SECTION: 8 CHRONIC DISEASES TREATED SUCCESSFULLY -->
+    <section id="chronic-diseases" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block mb-2">Specialized Medical Index</span>
-                <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900">Diseases We Treat Successfully</h2>
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-600 block mb-1">सफल उपचार ट्रैक्स</span>
+                <h2 class="text-3xl font-serif font-bold text-slate-900">८ जटिल रोग जहाँ हमारे फॉर्मूले पूर्ण सफल हैं</h2>
             </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Disease Item: Mental Health & Depression -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl group-hover:bg-purple-600 group-hover:text-white transition">
-                            <i class="fa-solid fa-brain"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Mental Health & Depression</h3>
-                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
-                            Deep-acting Medhya Rasayana treatments formulated to balance Satva, Rajas, and Tamas mental attributes. Reverses clinical depression, severe anxiety loops, panic disorders, and insomnia.
-                        </p>
-                    </div>
-                    <a href="#appointment-desk" class="mt-5 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Free Slot <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-                </div>
-
-                <!-- Disease Item: Women's Clinic -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl group-hover:bg-rose-600 group-hover:text-white transition">
-                            <i class="fa-solid fa-person-dress"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Women's Hormonal Disorders</h3>
-                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
-                            Root hormonal balancing treatments covering PCOS, PCOD, delayed periods, ovarian cysts, thyroid imbalances, irregular cycles, and metabolic weight optimization.
-                        </p>
-                    </div>
-                    <a href="#appointment-desk" class="mt-5 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Free Slot <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-                </div>
-
-                <!-- Disease Item: Joint & Bone -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:border-emerald-500 transition group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-5 font-bold text-xl group-hover:bg-orange-600 group-hover:text-white transition">
-                            <i class="fa-solid fa-bone"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition">Joint & Bone Care</h3>
-                        <p class="text-slate-500 text-xs mt-2 leading-relaxed">
-                            Complete permanent recovery maps for Rheumatoid Arthritis, Osteoarthritis, Cervical Spondylitis, Sciatica, and chronic Gout flare-ups by purifying synovial pathways.
-                        </p>
-                    </div>
-                    <a href="#appointment-desk" class="mt-5 text-xs font-bold text-emerald-600 inline-flex items-center group-hover:underline">Book Free Slot <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-                </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-800 flex items-center space-x-2"><i class="fa-solid fa-circle-check text-purple-600"></i> <span>१. मानसिक डिप्रेशन व एंग्जायटी</span></div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-800 flex items-center space-x-2"><i class="fa-solid fa-circle-check text-rose-600"></i> <span>२. PCOD / PCOS व रुकी महामारी</span></div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-800 flex items-center space-x-2"><i class="fa-solid fa-circle-check text-orange-600"></i> <span>३. गाउट व पुराना सायटिका दर्द</span></div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-800 flex items-center space-x-2"><i class="fa-solid fa-circle-check text-blue-600"></i> <span>४. क्रोनिक IBS व संग्रहणी विकार</span></div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-800 flex items-center space-x-2"><i class="fa-solid fa-circle-check text-teal-600"></i> <span>५. सोरायसिस व जिद्दी स्किन एलर्जी</span></div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-800 flex items-center space-x-2"><i class="fa-solid fa-circle-check text-amber-600"></i> <span>६. फैटी लिवर व मेटाबॉलिक सिंड्रोम</span></div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-800 flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> <span>७. क्रोनिक अस्थमा व कफ दोष</span></div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs font-bold text-slate-800 flex items-center space-x-2"><i class="fa-solid fa-circle-check text-red-600"></i> <span>८. आधासीसी (माइग्रेन) व पुराना साइनस</span></div>
             </div>
         </div>
     </section>
 
-    <!-- EXTENDED PATIENT TESTIMONIALS MATRIX BLOCK (8 TOTAL SUB-REVIEWS) -->
-    <section id="testimonials" class="py-20 bg-white border-t border-slate-200">
+    <!-- SECTION: COMMON DISEASES TREATED CATEGORIES -->
+    <section id="common-diseases" class="py-16 bg-slate-50 border-t border-slate-200/60">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 block mb-2">Global Case Archives</span>
-                <h2 class="text-3xl font-serif font-bold text-slate-900">Patient Success Testimonials (Worldwide)</h2>
-                <p class="text-slate-500 text-xs mt-2">Verified clinical recovery logs across our specialized multi-tier care pathways.</p>
+            <div class="mb-10 text-center lg:text-left">
+                <h2 class="text-2xl font-serif font-bold text-slate-900">१० सामान्य रोग श्रेणियां जिनका नियमित उपचार उपलब्ध है</h2>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- Review 1: Mental Depression -->
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 relative flex flex-col justify-between">
-                    <p class="text-slate-700 text-xs leading-relaxed italic">"Severe clinical depression and non-stop anxiety loops ruined my career. Dr. Nimil Jain's point-to-point family formulas completely reset my mental balance. I sleep beautifully now without sedatives."</p>
-                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] flex justify-between items-center">
-                        <strong class="text-slate-900 font-bold">Rajesh Malhotra (Delhi)</strong>
-                        <span class="text-purple-700 font-semibold text-[9px] uppercase">Depression Track</span>
-                    </div>
-                </div>
-
-                <!-- Review 2: PCOD & Delayed Periods -->
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 relative flex flex-col justify-between">
-                    <p class="text-slate-700 text-xs leading-relaxed italic">"Facing 8 months of delayed periods due to aggressive PCOD. Dr. Nimil Jain's specialized formulation kits regulated my cycle in 90 days flat. No unnecessary medical tests, highly affordable treatment!"</p>
-                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] flex justify-between items-center">
-                        <strong class="text-slate-900 font-bold">Pooja Verma (Agra)</strong>
-                        <span class="text-rose-700 font-semibold text-[9px] uppercase">PCOD Cycle Track</span>
-                    </div>
-                </div>
-
-                <!-- Review 3: Advanced Osteoarthritis -->
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 relative flex flex-col justify-between">
-                    <p class="text-slate-700 text-xs leading-relaxed italic">"Knee joint pain made walking impossible. Visited the Khandauli clinic center, and their century-old Vata balancing line restored my natural movement completely. Genuine relief."</p>
-                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] flex justify-between items-center">
-                        <strong class="text-slate-900 font-bold">Amit Sharma (Agra)</strong>
-                        <span class="text-orange-700 font-semibold text-[9px] uppercase">Joint Track</span>
-                    </div>
-                </div>
-
-                <!-- Review 4: Chronic IBS -->
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 relative flex flex-col justify-between">
-                    <p class="text-slate-700 text-xs leading-relaxed italic">"Severe bloating, acidity, and painful IBS episodes controlled my life. Dr. Jain's point-to-point liver detox strategies completely reset my digestive path. Very clear billing, no hassle."</p>
-                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] flex justify-between items-center">
-                        <strong class="text-slate-900 font-bold">Priya Patel (London, UK)</strong>
-                        <span class="text-blue-700 font-semibold text-[9px] uppercase">Gastro Track</span>
-                    </div>
-                </div>
-
-                <!-- Review 5: Insomnia -->
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 relative flex flex-col justify-between">
-                    <p class="text-slate-700 text-xs leading-relaxed italic">"Corporate mental fatigue led to complete chronic insomnia. The online video consultation with Dr. Nimil Jain was smooth, and the personalized routines work wonderfully."</p>
-                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] flex justify-between items-center">
-                        <strong class="text-slate-900 font-bold">Vikram Aditya (Bangalore)</strong>
-                        <span class="text-purple-700 font-semibold text-[9px] uppercase">Stress Track</span>
-                    </div>
-                </div>
-
-                <!-- Review 6: Severe Panic Loops -->
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 relative flex flex-col justify-between">
-                    <p class="text-slate-700 text-xs leading-relaxed italic">"Frequent panic attacks left me terrified. Dr. Jain's targeted psychiatric approach helped me regain complete control over my nerves."</p>
-                    <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] flex justify-between items-center">
-                        <strong class="text-slate-900 font-bold">S. Taylor (New York, USA)</strong>
-                        <span class="text-purple-700 font-semibold text-[9px] uppercase">Mental Track</span>
-                    </div>
-                </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center space-x-2 text-xs font-bold text-slate-700 shadow-2xs"><i class="fa-solid fa-circle-dot text-amber-500"></i> <span>हाइपरएसिडिटी व गैस</span></div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center space-x-2 text-xs font-bold text-slate-700 shadow-2xs"><i class="fa-solid fa-circle-dot text-amber-500"></i> <span>बालों का झड़ना व डैंड्रफ</span></div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center space-x-2 text-xs font-bold text-slate-700 shadow-2xs"><i class="fa-solid fa-circle-dot text-amber-500"></i> <span>मोटापा व वजन घटाना</span></div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center space-x-2 text-xs font-bold text-slate-700 shadow-2xs"><i class="fa-solid fa-circle-dot text-amber-500"></i> <span>शारीरिक कमजोरी व थकान</span></div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center space-x-2 text-xs font-bold text-slate-700 shadow-2xs"><i class="fa-solid fa-circle-dot text-amber-500"></i> <span>यूरिन इन्फेक्शन (UTI)</span></div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center space-x-2 text-xs font-bold text-slate-700 shadow-2xs"><i class="fa-solid fa-circle-dot text-amber-500"></i> <span>सर्वाइकल स्पॉन्डिलाइटिस</span></div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center space-x-2 text-xs font-bold text-slate-700 shadow-2xs"><i class="fa-solid fa-circle-dot text-amber-500"></i> <span>थायराइड असंतुलन</span></div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center space-x-2 text-xs font-bold text-slate-700 shadow-2xs"><i class="fa-solid fa-circle-dot text-amber-500"></i> <span>बवासीर व पाइल्स समस्या</span></div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center space-x-2 text-xs font-bold text-slate-700 shadow-2xs"><i class="fa-solid fa-circle-dot text-amber-500"></i> <span>अनिद्रा (नींद न आना)</span></div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center space-x-2 text-xs font-bold text-slate-700 shadow-2xs"><i class="fa-solid fa-circle-dot text-amber-500"></i> <span>फैटी लिवर ग्रेड १ व २</span></div>
             </div>
         </div>
     </section>
 
-    <!-- Premium Case Intake Desk (Formspree Fully Integrated) -->
-    <section id="appointment-desk" class="py-20 bg-slate-900 text-white rounded-t-[3rem] shadow-2xl">
+    <!-- Case Intake Form Desk (Formspree) -->
+    <section id="appointment-desk" class="py-16 bg-slate-900 text-white rounded-t-[2.5rem] border-t-2 border-amber-400">
         <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-12">
-            
-            <!-- Left Info Block -->
-            <div class="lg:col-span-4 space-y-6 flex flex-col justify-between">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Secure Consultation Hub</span>
-                    <h2 class="text-3xl font-serif font-bold leading-tight">Claim Your 100% Free First Consultation</h2>
-                    <p class="text-slate-400 text-xs mt-3 leading-relaxed">
-                        Fill out this mandatory intake registry. Your data drops directly onto Dr. Nimil Jain's secure clinical console via active Formspree routing. No hidden billing hassle.
-                    </p>
-                </div>
-
-                <div class="space-y-4 bg-white/5 p-6 rounded-2xl border border-white/5 text-xs">
-                    <div class="flex items-center space-x-3"><i class="fa-solid fa-phone text-emerald-400 text-base"></i><span class="text-slate-300 font-bold">+91 88816 64366</span></div>
-                    <div class="flex items-center space-x-3"><i class="fa-solid fa-envelope text-emerald-400 text-base"></i><span class="text-slate-300 font-bold">nimiljain@gmail.com</span></div>
-                    <div class="flex items-center space-x-3"><i class="fa-solid fa-location-dot text-emerald-400 text-base"></i><span class="text-slate-300">Near Expressway, Khandauli, Agra, India</span></div>
-                </div>
+            <div class="lg:col-span-4 space-y-6">
+                <h2 class="text-3xl font-serif font-bold">मुफ्त परामर्श केस पंजीकरण</h2>
+                <p class="text-slate-400 text-xs leading-relaxed">नीचे दिए फॉर्म में विवरण दर्ज करें। आपका केस विवरण सीधे डॉ. निमिल जैन के कंसोल पर सुरक्षित जमा होगा।</p>
             </div>
-
-            <!-- Comprehensive Clinical Medical Form -->
-            <div class="lg:col-span-8 bg-white p-8 md:p-10 rounded-2xl text-slate-800 shadow-2xl">
-                <div class="border-b border-slate-100 pb-4 mb-6 flex items-center justify-between">
-                    <h3 class="text-lg font-bold text-slate-900 flex items-center">
-                        <i class="fa-solid fa-file-prescription text-emerald-600 mr-2 text-xl"></i> Free Medical Intake Form
-                    </h3>
-                    <span class="text-[10px] bg-rose-100 text-rose-800 font-extrabold px-3 py-1 rounded-sm uppercase tracking-wide">₹0 Fees Applies</span>
-                </div>
-
-                <form action="https://formspree.io/f/xykalpzv" method="POST" class="space-y-5">
+            <div class="lg:col-span-8 bg-white p-6 rounded-2xl text-slate-800 shadow-2xl">
+                <form action="https://formspree.io/f/xykalpzv" method="POST" class="space-y-4">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Patient Full Name *</label>
-                            <input type="text" name="Patient Full Name" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Contact Phone Number *</label>
-                            <input 
-                                type="tel" 
-                                name="Patient Mobile Number" 
-                                required 
-                                pattern="[6-9][0-9]{9}"
-                                maxlength="10"
-                                placeholder="Enter 10-digit mobile number"
-                                class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs"
-                            >
-                        </div>
+                        <input type="text" name="Patient Name" placeholder="मरीज का नाम *" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs">
+                        <input type="tel" name="Mobile" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="१०-अंकों का मोबाइल नंबर *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs">
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Target Chronic Condition Track *</label>
-                            <select name="Disease Category Selected" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
-                                <option value="Mental Health Track">Mental Health / Clinical Depression / Severe Anxiety</option>
-                                <option value="Women Hormonal Track">Women's Hormonal Disorders & Delayed Periods</option>
-                                <option value="Joint Care Track">Joint & Advanced Arthritis Care</option>
-                                <option value="Gastrointestinal Track">Gastrointestinal Disorders (IBS / Fatty Liver)</option>
-                                <option value="Skin Track">Chronic Skin Disorders (Eczema / Psoriasis)</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Preferred Appointment Mode *</label>
-                            <select name="Preferred Consultation Mode" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium transition text-xs">
-                                <option>Digital Video Tele-Consultation (Remote)</option>
-                                <option>In-Person Visit (Agra Clinic Desk)</option>
-                            </select>
-                        </div>
+                        <select name="Disease Category" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs">
+                            <option>मानसिक अवसाद / डिप्रेशन / एंग्जायटी</option>
+                            <option>स्त्री रोग / PCOD / अनियमित महामारी</option>
+                            <option>जोड़ों का दर्द / सायटिका / गाउट</option>
+                        </select>
+                        <select name="Mode" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs">
+                            <option>ऑनलाइन वीडियो कॉल परामर्श (Tele-Consultation)</option>
+                            <option>इन-पर्सन क्लिनिक विज़िट (आगरा क्लिनिक)</option>
+                        </select>
                     </div>
-
-                    <div>
-                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Detailed Symptom History & Duration *</label>
-                        <textarea name="Patient Clinical History Details" rows="4" required placeholder="Please outline primary symptoms, how long you have had this chronic condition..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:outline-hidden focus:border-emerald-600 font-medium text-xs transition"></textarea>
-                    </div>
-
-                    <div class="pt-2">
-                        <button type="submit" class="w-full bg-emerald-700 text-white font-bold py-4 rounded-xl hover:bg-emerald-800 transition tracking-wide text-xs uppercase shadow-lg shadow-emerald-700/20">
-                            Submit Case Sheet For Doctor Review
-                        </button>
-                    </div>
+                    <textarea name="History" rows="3" placeholder="बीमारी के लक्षण एवं संक्षिप्त इतिहास *" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs"></textarea>
+                    <button type="submit" class="w-full bg-emerald-700 text-white font-bold py-3.5 rounded-xl text-xs uppercase tracking-wide">मुफ्त केस विवरण जमा करें</button>
                 </form>
             </div>
         </div>
-        
-        <!-- Footer -->
-        <div class="max-w-7xl mx-auto px-4 mt-20 py-8 border-t border-white/5 text-center text-[11px] text-slate-500 leading-relaxed">
-            &copy; 2026 Dr. Nimil Jain, B.A.M.S. All rights reserved. | Main Clinical Hub: Near Expressway, Khandauli, Agra.<br>
-            Disclaimer: Consultations are rooted in traditional Ayurvedic internal medicine protocols passed down across 4 generations of medical service by the Jain Family Practitioners.
+        <div class="max-w-7xl mx-auto px-4 mt-16 py-4 border-t border-white/5 text-center text-[10px] text-slate-500">
+            &copy; 2026 Dr. Nimil Jain, B.A.M.S. All rights reserved. | मुख्य कार्यालय: एक्सप्रेसवे के पास, खंदौली, आगरा।
         </div>
     </section>
 
